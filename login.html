@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login page</title>
+        <style>
+            body{
+                background-color: lightgray;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            .text-centre{
+                text-align: center;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            .text-centre1{
+                text-align: center;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: darkred;
+            }
+            .login-form{
+                width: 280px;
+                margin: 0 auto;
+                margin-top: 18px;
+                border: grey;
+                padding: 64px;
+                border-radius: 5%;
+                background-color: black;
+                box-shadow: grey;
+                color: white;
+            }
+            .form-control{
+                display: block;
+                margin-bottom: 16px;
+                width: 100%;
+                height: 32px;
+                border: gray;
+                border-radius: 5%;
+            }
+            .btn-signin{
+                display: block;
+                margin: 0 auto;
+                margin-top: 16px;
+                background-color: darkred;
+                border: lightgray;
+                padding: 8px 16px;
+                border-radius: 25%;
+                color: white;
+                font-weight: bold;
+            }
+            .TC{
+                color: grey;
+                font-style: italic;
+            }
+    </style>
+    </head>
+    <body>
+        <h1 class="text-centre1">Welcome to LecturePro!</h1><br>
+        <h2 class="text-centre">Let's get you in!</h2><br>
+        <div class="login-form">
+        <form action="#">
+            <label for="name">Name</label><br>
+            <input type="name" placeholder="Shaan" name="name" id="name" class="form-control"><br>
+            <label for="Contact Number">Contact Number</label><br>
+            <input type="Contact Number" placeholder="+91 1234 5678 90" name="Contact Number" id="Contact Number" class="form-control"><br>
+            <label for="Email">Email</label><br>
+            <input type="email" placeholder="shaan@gmail.com" name="Email" id="Email" class="form-control"><br>
+            <label for="Password">Password</label>
+            <input type="password" placeholder="*******" name="Password" id="Password" class="form-control">
+            <label>
+                <input name="Student" type="checkbox" id="Student">Student
+            </label> 
+           
+            <label>
+                <input name="Lecturer" type="checkbox" id="Lecturer">Lecturer
+            </label><br> <br>
+            <label class="TC"> 
+                <input name="Student" type="checkbox" id="Student" required > agree to T&C of LecturePro Pvt. Ltd.
+            </label> <br><br>
+            <button type="Sign in" class="btn-signin">Sign Up</button>
+        </form>
+    </div>
+    </body>
+</html>
